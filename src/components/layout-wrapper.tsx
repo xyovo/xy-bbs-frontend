@@ -2,6 +2,8 @@
 
 import { usePathname } from "next/navigation";
 import React from "react";
+import Header from "./header";
+import ContainerWrapper from "./container-wrapper";
 
 export default function RootLayoutWrapper({
   children,
@@ -15,9 +17,9 @@ export default function RootLayoutWrapper({
     return <>{children}</>;
   }
   return (
-    <>
-      <div>global layout...</div>
-      {children}
-    </>
+    <div className={"pt-[60px] bg-gray-50 min-h-screen"}>
+      <Header />
+      <ContainerWrapper>{children}</ContainerWrapper>
+    </div>
   );
 }

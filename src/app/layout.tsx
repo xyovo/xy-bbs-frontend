@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import RootLayoutWrapper from "@/components/layout_wrapper";
+import RootLayoutWrapper from "@/components/layout-wrapper";
 
 export const metadata: Metadata = {
   title: "Create Next App",
